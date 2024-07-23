@@ -30,6 +30,9 @@ public class SavingAccountTest {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             savingAccount = new SavingAccount(10_000, 1_000, 15_000, -5);
         });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            savingAccount = new SavingAccount(17_000, 1_000, 15_000, -5);
+        });
     }
 
     @Test
