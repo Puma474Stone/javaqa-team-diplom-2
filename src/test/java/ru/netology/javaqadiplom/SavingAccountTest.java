@@ -64,8 +64,8 @@ public class SavingAccountTest {
 
     @Test
     public void calculationOfInterestOnBalance() {
-        savingAccount = new SavingAccount(225, 100, 15_000, 10);
-        Assertions.assertEquals(22, savingAccount.yearChange());
+        savingAccount = new SavingAccount(1225, 100, 15_000, 10);
+        Assertions.assertEquals(122, savingAccount.yearChange());
     }
 
 }
