@@ -24,8 +24,6 @@ public class SavingAccount extends Account {
         if (rate < 0) {
             throw new IllegalArgumentException(
                     "Накопительная ставка не может быть отрицательной, а у вас: " + rate
-<<<<<<< Updated upstream
-=======
             );
         }
         if (minBalance < 0) {
@@ -46,7 +44,6 @@ public class SavingAccount extends Account {
         if (initialBalance > maxBalance) {
             throw new IllegalArgumentException(
                     "Начальный баланс не может быть больше максимального, у вас: " + initialBalance + " > " + maxBalance
->>>>>>> Stashed changes
             );
         }
 
