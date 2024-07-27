@@ -47,7 +47,9 @@ public class SavingAccountTest {
         SavingAccount account = new SavingAccount(
                 2_000,
                 1_000,
-
+                10_000,
+                5
+        );
         account.add(3_000);
 
         Assertions.assertEquals(2_000 + 3_000, account.getBalance());
@@ -61,8 +63,9 @@ public class SavingAccountTest {
 
     @Test
     public void calculationOfInterestOnBalance() {
-        savingAccount = new SavingAccount(225, 100, 15_000, 10);
-        Assertions.assertEquals(22, savingAccount.yearChange());
+        savingAccount = new SavingAccount(1225, 100, 15_000, 10);
+        Assertions.assertEquals(122, savingAccount.yearChange());
+
     }
 
 }
